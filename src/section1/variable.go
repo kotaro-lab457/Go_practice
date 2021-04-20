@@ -5,7 +5,7 @@ import (
 )
 
 func num() {
-	a, b := 10, 20            // コロン＆イコールで辺数名が定義できる
+	a, b := 10, 20            // コロン＆イコールで変数名が定義できる
 	var xi float64 = 1.234567 // 「float」は少数
 	fmt.Println(a, b, xi)
 	fmt.Printf("%T\n", a)

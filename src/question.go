@@ -50,9 +50,27 @@ func q2() {
 	}
 	fmt.Println(sum)
 }
+func q3() {
+	var i int = 100
+	var j int = 200
+	var k int = 30
+	var p1 *int
+	var p2 *int
+	var p3 *int
+	p1 = &i
+	//fmt.Println(*p1)
+	p2 = &j
+	i = *p1 + *p2
+	p3 = &k
+	p2 = p3
+	fmt.Println(*p2)
+	j = *p2 + i
+	fmt.Println(j)
+
+}
 
 func main() {
 	// q1()
-	q2()
-
+	// q2()
+	q3()
 }

@@ -69,8 +69,27 @@ func q3() {
 
 }
 
+type Vertex struct {
+	X, Y int
+}
+
+// func (v Vertex) Plus() int {
+// 	return v.X + v.Y
+// }
+
+func (v Vertex) String() string {
+	return fmt.Sprintf("X is %d! Y is %d!", v.X, v.Y)
+}
+
+func q4() {
+	v := Vertex{3, 4}
+	// fmt.Println(v.Plus())
+	fmt.Println(v)
+}
+
 func main() {
 	// q1()
 	// q2()
-	q3()
+	// q3()
+	q4()
 }

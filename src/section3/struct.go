@@ -4,6 +4,7 @@ import "fmt"
 
 // 構造体 struct
 // 構造体の定義方法
+// 型は決まるが、あくまで構造体と認識する。
 type Vertex struct {
 	X int
 	Y int

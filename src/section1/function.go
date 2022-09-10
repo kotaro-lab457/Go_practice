@@ -1,16 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func add(x int, y int) {
-	fmt.Println("add function")
 	fmt.Println(x + y)
-	// add function
-	// 30
-}
-
-func add2(x int, y int) int {
-	return x + y
+	data := time.Now()
+	fmt.Println(data)
 }
 
 // returnを2つ
@@ -27,21 +25,11 @@ func cal(price, item int) (result int) {
 func main() {
 	add(10, 20)
 
-	r := add2(10, 20)
-	fmt.Println(r)
-	// 30
-
 	r1, r2 := add3(30, 40)
 	fmt.Println(r1, r2)
 	// 70 -10
 
-	r3 := cal(100, 2)
+	r3 := cal(10, 2)
 	fmt.Println(r3)
-	// 200
-
-	f := func(x int) {
-		fmt.Println("inner func", x)
-	}
-	f(1)
-	// inner func 1
+	// 20
 }

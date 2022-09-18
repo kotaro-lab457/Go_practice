@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func generater() func() int {
 	i := 0
@@ -47,5 +49,22 @@ func main() {
 		fmt.Println(a)
 	}
 	fmt.Println(a, "aaa")
+
+	// var h string = "A"
+
+	// i, err := strconv.Atoi(h)
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+	// fmt.Println("i= %T\n", i)
+
+	for i := 0; i < 10; i++ {
+		if i == 3 {
+			fmt.Println(i)
+			// break
+			continue
+		}
+		fmt.Println(i)
+	}
 
 }

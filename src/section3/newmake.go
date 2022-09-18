@@ -2,6 +2,14 @@ package main
 
 import "fmt"
 
+func generater() func() int {
+	i := 0
+	return func() int {
+		i++
+		return i
+	}
+}
+
 func main() {
 
 	// makeは空を返す
@@ -15,18 +23,19 @@ func main() {
 	var p *int = new(int)
 	fmt.Printf("%T\n", p)
 
-	// new() ... 初期化せず、０になる。返り値がアドレスでの表示
-	// var p *int = new(int)
-	// fmt.Println(*p)
-	// // 0
-	// *p++
-	// fmt.Println(*p)
-	// // 1
+	ints := generater()
 
-	// var p2 *int
-	// fmt.Println(p2)
-	// // <nil>
-	// *p2++
-	// fmt.Println(p2)
-	// panicエラー nilには、数値がないので足すことができません
+	fmt.Println(ints())
+	fmt.Println(ints())
+	fmt.Println(ints())
+
+	ints2 := generater()
+
+	fmt.Println(ints2())
+	fmt.Println(ints2())
+	fmt.Println(ints2())
+	fmt.Println(ints2())
+	fmt.Println(ints2())
+	fmt.Println(ints2())
+
 }

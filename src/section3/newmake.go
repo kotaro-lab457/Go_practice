@@ -23,19 +23,29 @@ func main() {
 	var p *int = new(int)
 	fmt.Printf("%T\n", p)
 
-	ints := generater()
+	// ints := generater()
 
-	fmt.Println(ints())
-	fmt.Println(ints())
-	fmt.Println(ints())
+	// fmt.Println(ints())
+	// fmt.Println(ints())
+	// fmt.Println(ints())
 
-	ints2 := generater()
+	// ints2 := generater()
 
-	fmt.Println(ints2())
-	fmt.Println(ints2())
-	fmt.Println(ints2())
-	fmt.Println(ints2())
-	fmt.Println(ints2())
-	fmt.Println(ints2())
+	// fmt.Println(ints2())
+	// fmt.Println(ints2())
+	// fmt.Println(ints2())
+	// fmt.Println(ints2())
+	// fmt.Println(ints2())
+	// fmt.Println(ints2())
+
+	if b := 100; b == 100 {
+		fmt.Println("if")
+	}
+
+	var a int = 0
+	if a := 100; a == 100 {
+		fmt.Println(a)
+	}
+	fmt.Println(a, "aaa")
 
 }
